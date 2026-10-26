@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f2f3f4; color: #1c2733; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; }
+a { color: #0078c8; text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { font-size: 24px; margin: 0; }
+h2 { margin-top: 0; }
+h3 { margin: 0; font-size: 16px; }
+
+/* top bar, like Xero */
+.navbar { background: #0078c8; color: #fff; display: flex; align-items: center; gap: 24px; padding: 0 20px; height: 48px; }
+.navbar a { color: #fff; }
+.logo { font-weight: 700; font-size: 18px; }
+.navbar nav { display: flex; gap: 4px; flex: 1; }
+.navbar nav a, .nav-right a { padding: 14px 10px; border-bottom: 3px solid transparent; }
+.navbar a.active { border-bottom-color: #fff; }
+.navbar a:hover { text-decoration: none; background: rgba(255, 255, 255, 0.12); }
+.nav-right { display: flex; align-items: center; gap: 8px; }
+.avatar { background: #f5c242; color: #1c2733; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: 12px; }
+.navbar .link-btn { color: #fff; }
+
+.page { max-width: 960px; margin: 24px auto; padding: 0 16px; }
+.page.narrow { max-width: 480px; }
+.title-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.card { background: #fff; border: 1px solid #e1e2e5; border-radius: 8px; padding: 16px 20px; margin-bottom: 14px; }
+.card .title-row { margin-bottom: 4px; }
+.muted { color: #5f6b76; }
+.pre { white-space: pre-wrap; line-height: 1.5; }
+.error { background: #fbe9ea; color: #a8071a; border: 1px solid #f3b9bd; padding: 8px 12px; border-radius: 6px; }
+
+/* forms */
+label { display: block; margin: 12px 0 4px; font-weight: 600; }
+input, select, textarea { width: 100%; padding: 8px 10px; border: 1px solid #ccced2; border-radius: 6px; font: inherit; background: #fff; }
+.title-row select { width: auto; }
+input:focus, select:focus, textarea:focus, button:focus-visible, a:focus-visible { outline: 2px solid #0078c8; outline-offset: 1px; }
+.btn { display: inline-block; margin-top: 16px; background: #0078c8; color: #fff; border: 0; border-radius: 6px; padding: 9px 18px; font: inherit; font-weight: 600; cursor: pointer; }
+.btn:hover { background: #0066ab; text-decoration: none; }
+.link-btn { background: none; border: 0; padding: 0; color: #0078c8; font: inherit; cursor: pointer; }
+.link-btn:hover { text-decoration: underline; }
+.danger { color: #c62828; }
+
+/* tables */
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid #e1e2e5; }
+th { color: #5f6b76; font-weight: 600; }
+.actions { display: flex; gap: 12px; }
+.explain { background: #f7f8f9; white-space: pre-wrap; }
+
+/* badges + chips */
+.badge { padding: 2px 10px; border-radius: 10px; font-size: 12px; font-weight: 600; background: #e1e2e5; }
+.badge.OPEN, .badge.SCORED { background: #d9f2e1; color: #1b6e3a; }
+.badge.CLOSED, .badge.FAILED { background: #fbe9ea; color: #a8071a; }
+.badge.SUBMITTED, .badge.PROCESSING { background: #fff3d1; color: #8a5a00; }
+.chip { display: inline-block; background: #e8f1fa; color: #0f4f87; border-radius: 4px; padding: 2px 8px; margin: 6px 6px 0 0; font-size: 12px; }
